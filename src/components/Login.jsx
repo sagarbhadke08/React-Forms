@@ -14,16 +14,16 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(eneterdEmail);
-    console.log(eneteredPassowrd);
+    console.log(enteredValues.email);
+    console.log(enteredValues);
 
 
   }
 
-  function handleInputChange(identifier, event){
+  function handleInputChange(identifier, value){
     setEnteredValues(prevValues=>({
       ...prevValues,
-      [identifier]:event.target.value
+      [identifier]:value
     }))
   }
 
@@ -51,8 +51,8 @@ export default function Login() {
             id="email"
             type="email"
             name="email"
-            onChange={(event)=>handleInputChange('email',event)}
-            value={eneterdEmail}
+            onChange={(event)=>handleInputChange('email',event.target.value)}
+            value={enteredValues.email}
           />
         </div>
 
@@ -62,8 +62,8 @@ export default function Login() {
             id="password"
             type="password"
             name="password"
-            onChange={handlePasswordChange}
-            value={eneteredPassowrd}
+            onChange={(event)=>handleInputChange('password',event.target.value)}
+            value={enteredValues.password}
           />
         </div>
       </div>
