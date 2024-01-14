@@ -24,7 +24,7 @@ header img {
   height: 5rem;
   object-fit: contain;
   border-radius: 50%;
-  border: 2px solid #758a8a;
+  border: 2px solid #e9c41e;
   filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5));
 }
 
@@ -85,8 +85,8 @@ fieldset {
   font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #dba81b;
-  background-color: #f3c42b;
-  color: #e9cc28;
+  background-color: #f7eebc;
+  color: #f57e0e;
 }
 
 .control:has(input[type='checkbox']) {
@@ -106,7 +106,7 @@ fieldset {
   border-radius: 0;
   border: none;
   background-color: transparent;
-  color: #d9e2f1;
+  color: #f3e352;
 }
 
 .control-error {
@@ -138,23 +138,23 @@ fieldset {
   font-size: 1rem;
   border-radius: 4px;
   border: none;
-  background-color: #147b73;
+  background-color: #d1a427;
   color: #d9e2f1;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #319890;
+  background-color: #e7b719;
 }
 
 .button-flat {
   background-color: transparent;
-  color: #9cbaba;
+  color: #ffffff;
 }
 
 .button-flat:hover,
 .button-flat:focus {
   background-color: transparent;
-  color: #869999;
+  color: #f3bb05;
 }
