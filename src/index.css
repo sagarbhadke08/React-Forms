@@ -9,8 +9,8 @@ body {
   font-family: 'Lato', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#d0d6d9, #b1b4ba);
-  color: #d9e2f1;
+  background: linear-gradient(#feffff, #fce393);
+  color: #8f7728;
   min-height: 100vh;
 }
 
@@ -34,7 +34,7 @@ header h1 {
   font-size: 3rem;
   margin: 1rem 0;
   letter-spacing: 0.2rem;
-  color: #2f4444;
+  color: #cc9a11;
 }
 
 form {
@@ -42,9 +42,9 @@ form {
   max-width: 40rem;
   margin: 3rem auto;
   padding: 2rem;
-  background: linear-gradient(180deg, #253c3c, #1d4949);
+  background: linear-gradient(180deg, #f8bb48, #e6cf52);
   border-radius: 8px;
-  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 16px 1px rgba(240, 203, 40, 0.767);
 }
 
 .control,
@@ -60,7 +60,7 @@ fieldset {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
-  color: #9bafaf;
+  color: #8f3917;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -72,9 +72,9 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
-  color: #142020;
+  border: 1px solid #ecc514;
+  background-color: #f7eebc;
+  color: #102b2b;
 }
 
 .control select {
@@ -84,9 +84,9 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
-  color: #142020;
+  border: 1px solid #dba81b;
+  background-color: #f3c42b;
+  color: #e9cc28;
 }
 
 .control:has(input[type='checkbox']) {
