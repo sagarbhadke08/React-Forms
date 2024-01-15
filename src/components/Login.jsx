@@ -16,7 +16,7 @@ export default function Login() {
     password: false
   })
 
-  const emailIsInvlaid = enteredValues.email !== '' && !enteredValues.email.includes('@');
+  const emailIsInvlaid = didEdit.email && !enteredValues.email.includes('@');
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -32,12 +32,17 @@ export default function Login() {
       ...prevValues,
       [identifier]: value,
     }))
-  }
+      setDidEdit(prevEdit=>({
+        ...prevEdit,
+        [identifier]:false
+      }))
+
+    }
 
   function handleInputBlur(identifier) {
     setDidEdit(prevEdit => ({
       ...prevEdit,
-      [identifier]: value
+      [identifier]: true
     }))
   }
 
